@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            background-color: #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 class="text">text 1 from outside div</h2>
+
+    <div>
+        
+        <h1 >Heading text</h1>
+        <h2 class="text"> H2 text</h2>
+        <h2 class="text"> h3 text</h2>
+    </div>
+
+    <script>
+
+        let element = document.querySelectorAll("h2.text");
+        // element.innerHTML = "Query Selector";
+
+        for (let i = 0; i < element.length; i++) {
+            element[i].innerHTML = "Query Selector Text";
+        }
+    </script>
+</body>
+
+</html>

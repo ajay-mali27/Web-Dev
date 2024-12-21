@@ -9,19 +9,25 @@
 
 <body>
 
-    <li>
-        <ul class="student">Ajay</ul>
-        <ul class="student">Rahul</ul>
-        <ul class="student">kalyani</ul>
-        <ul class="student">Mayuri</ul>
-    </li>
 
+    <h1> Heading h1 (Outside div.)</h1>
+
+    <div id="div1">
+        <h1>text1</h1>
+        <h1>text2</h1>
+        <h1>text3</h1>
+        <p>para text </p>
+    </div>
 
     <script>
-        let person = document.getElementsByClassName("student");
-        console.log(person);
-        
+        let divele = document.getElementById("div1");
+        let element = divele.getElementsByTagName("h1");
+
+        for (let i = 0; i < element.length; i++) {
+            element[i].innerHTML = "Hello from pune";
+        }
     </script>
+
 </body>
 
 </html>
