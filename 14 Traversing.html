@@ -8,8 +8,8 @@
 </head>
 
 <body>
-    <ul>
-        <li id="intro">List A</li>
+    <ul id="intro">
+        <li>List A</li>
         <li>List B</li>
         <li>List C</li>
     </ul>
@@ -21,12 +21,17 @@
     </ul>
 
     <script>
+        let parent = document.getElementById("intro");
+        let node = parent.children;
 
-        let elm = document.getElementById("intro");
-        let parent = elm.parentElement;
-        // we can change list to h2.
-        parent.innerHTML = "<h2>Hello world </h2>";
-        console.log(parent);
+
+        for (let i = 0; i < node.length; i++) {
+            node[i].innerHTML = "<h2>I am Iron Man </h2>"
+
+        }
+        console.log(node);
+
+
 
     </script>
 </body>
